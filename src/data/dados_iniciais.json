@@ -1,0 +1,90 @@
+{
+  "categorias": [
+    {
+      "titulo": "Filmes",
+      "link": "https://www.alura.com.br/formacao-front-end",
+      "cor": "#B22222",
+      "link_extra": {
+        "text": "Alguns dos meus filmes favoritos",
+        "url": "/"
+      },
+      "videos": [
+        {
+          "titulo": "Matrix",
+          "url": "https://www.youtube.com/watch?v=m8e-FF8MsqU&t=1s"
+        },
+        {
+          "titulo": "Mad Max - Fury Road",
+          "url": "https://www.youtube.com/watch?v=NH5TpcVaqCQ"
+        },
+        {
+          "titulo": "Dark Knight",
+          "url": "https://www.youtube.com/watch?v=EXeTwQWrcwY"
+        },
+        {
+          "titulo": "The Lord of the Rings",
+          "url": "https://www.youtube.com/watch?v=V75dMMIW2B4"
+        },
+        {
+          "titulo": "Cisne Negro",
+          "url": "https://www.youtube.com/watch?v=5jaI1XOB-bs"
+        }
+
+      ]
+    },
+    {
+      "titulo": "Series",
+      "cor": "#B22222",
+      "link_extra": {
+        "text": "Algumas das minhas series favoritas",
+        "url": "/"
+      },
+      "videos": [
+        {
+          "titulo": "Mr Robot",
+          "url": "https://www.youtube.com/watch?v=xIBiJ_SzJTA"
+        },
+        {
+          "titulo": "Avatar",
+          "url": "https://www.youtube.com/watch?v=FMbENDknKi4"
+        },
+        {
+          "titulo": "Death Note",
+          "url": "https://www.youtube.com/watch?v=8QE9cmfxx4s"
+        },
+        {
+          "titulo": "Naruto",
+          "url": "https://www.youtube.com/watch?v=SRn99oN1p_c"
+        }
+
+      ]
+    },
+    {
+      "titulo": "Músicas",
+      "cor": "#B22222",
+      "link_extra": {
+        "text": "Algumas das minhas musicas favoritas",
+        "url": "/"
+      },
+      "videos": [
+        {
+          "titulo": "Dead Fish - Sangue nas mãos",
+          "url": "https://www.youtube.com/watch?v=tf9kjBGo4Tw&list=RDMMxjJnWuA7-ps&index=27"
+        },
+        {
+          "titulo": "For A Few Dollars More // The Danish National Symphony Orchestra (Live)",
+          "url": "https://www.youtube.com/watch?v=DT1NJwEi6nw"
+        },
+        {
+          "titulo": "Hans Zimmer The Dark Knight Medley",
+          "url": "https://www.youtube.com/watch?v=xjJnWuA7-ps"
+        },
+        {
+          "titulo": "Nightwish - The Phantom Of The Opera",
+          "url": "https://www.youtube.com/watch?v=8VgLKXD-BoY"
+        }
+      ]
+    }
+
+  ]
+}
