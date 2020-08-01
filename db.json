@@ -1,0 +1,16 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Filmes",
+      "descricao": "Lista de filmes",
+      "cor": "#6BD1FF"
+    },
+    {
+      "id": 2,
+      "nome": "Series",
+      "descricao": "Lista de series",
+      "cor": "#6BD1FF"
+    }
+   ]
+}
