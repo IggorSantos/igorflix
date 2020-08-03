@@ -3,6 +3,7 @@ import PageDefault from '../../../components/pageDefault'
 import {Link} from 'react-router-dom'
 import FormField from '../../../components/formField'
 import Button from '../../../components/button'
+import useForm from '../../../hooks'
 
 function CadastroCategoria(){
   const valoresIniciais = {
@@ -11,21 +12,7 @@ function CadastroCategoria(){
     cor:'',
   }
   const [categorias,setCategorias] = useState([])
-  const [valores,setValores] = useState(valoresIniciais)
-
-  function setValue(chave,valor){
-    setValores({
-      ...valores,
-      [chave] : valor,
-    })
-  }
-
- function handleChange(info){
-   setValue(
-   info.target.getAttribute('name'),
-   info.target.value
-   );
- }
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
 
  useEffect(() => {
        const URL = window.location.hostname.includes('localhost')
@@ -43,35 +30,35 @@ function CadastroCategoria(){
 
   return(
     <PageDefault>
-     <h1>Cadastro de categoria:{valores.nome}</h1>
+     <h1>Cadastro de categoria:{values.nome}</h1>
      <form onSubmit={function handleSubmit(info){
        info.preventDefault()
        console.log("Você tentou enviar um form")
        setCategorias([
          ...categorias,
-         valores
+         values
        ]);
-       setValores(valoresIniciais)
+       clearForm();
      }}>
       <FormField
          label="Nome da Categoria"
          type="text"
          name="nome"
-         value={valores.nome}
+         value={values.nome}
          onChange={handleChange}
       />
       <FormField
          label="Descrição"
          type="textarea"
          name="descricao"
-         value={valores.descricao}
+         value={values.descricao}
          onChange={handleChange}
       />
       <FormField
          label="Cor"
          type="color"
          name="cor"
-         value={valores.cor}
+         value={values.cor}
          onChange={handleChange}
       />
       <Button>
@@ -82,7 +69,7 @@ function CadastroCategoria(){
        {categorias.map((categoria,indice) => {
          return(
            <li key={`${categoria}${indice}`}>
-            {categoria.nome}
+            {categoria.titulo}
            </li>
          )
        })}
